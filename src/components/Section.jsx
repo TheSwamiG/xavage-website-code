@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Section(props) {
+  const [showFullText, setShowFullText] = useState(false);
+
+  function toggleText() {
+    setShowFullText(!showFullText);
+  }
+
   return (
-    <div class="min-w-screen-xl py-10">
+    <div class="w-full flex justify-center">
       <div class="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
-        <div class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-          <h1 class="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">
+        <div class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1 items-center justify-center">
+          <h1 class="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white justify-center">
             {props.title}
           </h1>
           <p class="text-sm leading-4 font-medium text-[#089dc2] sm:text-slate-500 dark:sm:text-slate-400">
@@ -13,7 +19,7 @@ function Section(props) {
           </p>
         </div>
 
-        <div class="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
+        <div class="mt-4 col-start-1 row-start-3 flex justify-center items-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4 ">
           <button
             type="button"
             class="bg-[#089dc2] text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
@@ -21,9 +27,32 @@ function Section(props) {
             Register
           </button>
         </div>
-        <p class="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400">
-          {props.info}
-        </p>
+        <div class="flex justify-center items-center mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1">
+          <div>
+            <div className={showFullText ? "" : "line-clamp-6"}>
+              <p className="text-white leading-6">{props.info}</p>
+            </div>
+            {showFullText ? (
+              <div className="mt-2">
+                <button
+                  className="text-blue-500 hover:underline"
+                  onClick={toggleText}
+                >
+                  View less
+                </button>
+              </div>
+            ) : (
+              <div className="mt-2">
+                <button
+                  className="text-blue-500 hover:underline"
+                  onClick={toggleText}
+                >
+                  View more
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
