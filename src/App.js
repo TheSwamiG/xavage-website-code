@@ -31,8 +31,8 @@ function App(props) {
         "
           />
           <Section
-            title="The Deal-Makers’ Dilemma : A Corporate Negotiation Challenge"
-            subtitle=""
+            title="The Deal-Makers’ Dilemma"
+            subtitle="Real crises. Real consequences."
             info="‘The Deal Makers’ Dilemma’, is a competition designed to simulate the complex world of corporate law and negotiation. 
 
         Participants are given 30-45 minutes to analyze a case study. Your team will face off against other teams to negotiate a monetary settlement. 
@@ -51,12 +51,14 @@ function App(props) {
           />
           <Section
             title="Capital Conquest"
-            subtitle=""
+            subtitle="Real crises. Real consequences."
             info="Step into the thrilling world of Xavage's Private Investment Market simulation! Immerse yourself in a real-life investment experience where investors and firms collide, driven by defined goals and values, all vying for the ultimate return and capital gains. Sharpen your investing acumen and showcase your incisive skills in this high-stakes game of strategy and decision-making. Are you ready to seize the opportunity and emerge as a true investment virtuoso?"
           />
+        </div>
+        <div class="col-span-6 p-12 justify-center">
           <Section
             title="Ready? Set. Sell!"
-            subtitle=""
+            subtitle="Real crises. Real consequences."
             info="Get ready for the most exhilarating marketing showdown of the year – 'Ready, Set, Sell!'
         Only 12 teams, each with 3-4 members will compete in this battle of creativity and strategy.
         The test of skills starts in full swing in Round 1. Each team will choose from two distinct objects and within 1 hour, the teams will prepare a 2-minute advertisement followed by a 3-4 minute presentation on unique marketing techniques they would incorporate to differentiate their product. No two teams will have the same object and the teams will be marked based on innovation and creativity, as well as consumer-orientation and market research.
@@ -68,7 +70,7 @@ function App(props) {
           />
           <Section
             title="Monopoly Quest"
-            subtitle=""
+            subtitle="Real crises. Real consequences."
             info="Challenge your knowledge in the different fields of economics & business!
 
         Round 1: 
@@ -86,17 +88,15 @@ function App(props) {
         
         "
           />
-        </div>
 
-        <div class="col-span-6 p-12 justify-center">
           <Section
             title="Trojan's Tank"
-            subtitle=""
+            subtitle="Real crises. Real consequences."
             info="Do you think you've got what it takes to pitch your startup to us? Join us in TISB's very own entrepreneurial shark tank event where you have to come up with a unique business idea and impress our unrelenting panel of venture capitalists. Put your thinking caps on, prepare a thorough business plan and get ready to unleash the gritty entrepreneur in you, and ultimately make the winning pitch!"
           />
           <Section
             title="Bulls & Bears"
-            subtitle=""
+            subtitle="Real crises. Real consequences."
             info="The stock market is unpredictable, uncontrollable and risky. Or is it? Investors seek to gain an understanding of the market and the companies they invest in to determine their future, accounting for the risk. We’re not day traders after all. 
         Join us in Bulls and Bears stock simulation competition, where you will be given the opportunity to analyze companies and stocks, poring through financials, and read the constant news updates!
         Will you net the highest returns, or will an Elon Musk tweet ravage your portfolio?

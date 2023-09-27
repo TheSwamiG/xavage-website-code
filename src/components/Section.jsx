@@ -9,8 +9,8 @@ function Section(props) {
 
   return (
     <div class="w-full flex justify-center">
-      <div class="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
-        <div class="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1 items-center justify-center">
+      <div class="max-w-4xl mx-auto  lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2 py-10">
+        <div class="relative col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1 items-center justify-center p-10">
           <h1 class="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white justify-center">
             {props.title}
           </h1>
@@ -29,7 +29,7 @@ function Section(props) {
         </div>
         <div class="flex justify-center items-center mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1">
           <div>
-            <div className={showFullText ? "" : "line-clamp-6"}>
+            <div className={showFullText ? "" : "line-clamp-5"}>
               <p className="text-white leading-6">{props.info}</p>
             </div>
             {showFullText ? (
